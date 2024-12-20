@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_ebook_page_teaching_path_section_s",
+  "info": {
+    "displayName": "Teaching Path Section ",
+    "icon": "code"
+  },
+  "options": {},
+  "attributes": {
+    "topic": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

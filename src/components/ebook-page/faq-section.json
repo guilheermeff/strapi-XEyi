@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_ebook_page_faq_sections",
+  "info": {
+    "displayName": "FAQ Section",
+    "icon": "code"
+  },
+  "options": {},
+  "attributes": {
+    "answer": {
+      "type": "text",
+      "required": true
+    },
+    "question": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

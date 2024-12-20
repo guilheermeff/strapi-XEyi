@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_ebook_page_topics",
+  "info": {
+    "displayName": "Topic",
+    "icon": "code"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

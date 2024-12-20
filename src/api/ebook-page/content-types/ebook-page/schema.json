@@ -70,7 +70,7 @@
     },
     "WillLearn": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "pluginOptions": {},
       "component": "ebook-page.will-learn-section"
     },

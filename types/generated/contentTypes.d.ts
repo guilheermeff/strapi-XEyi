@@ -409,7 +409,7 @@ export interface ApiEbookPageEbookPage extends Schema.CollectionType {
       'admin::user'
     > &
       Attribute.Private;
-    WillLearn: Attribute.Component<'ebook-page.will-learn-section', true>;
+    WillLearn: Attribute.Component<'ebook-page.will-learn-section'>;
   };
 }
 

@@ -82,6 +82,17 @@ export interface EbookPageTeachingPathSection extends Schema.Component {
   };
 }
 
+export interface EbookPageTopic extends Schema.Component {
+  collectionName: 'components_ebook_page_topics';
+  info: {
+    displayName: 'Topic';
+    icon: 'code';
+  };
+  attributes: {
+    description: Attribute.String & Attribute.Required;
+  };
+}
+
 export interface EbookPageWillLearnSection extends Schema.Component {
   collectionName: 'components_ebook_page_will_learn_sections';
   info: {
@@ -91,7 +102,7 @@ export interface EbookPageWillLearnSection extends Schema.Component {
   };
   attributes: {
     coverEbook: Attribute.Media<'images'> & Attribute.Required;
-    topics: Attribute.JSON & Attribute.Required;
+    topics: Attribute.Component<'ebook-page.topic', true>;
   };
 }
 
@@ -104,6 +115,7 @@ declare module '@strapi/types' {
       'ebook-page.metadata': EbookPageMetadata;
       'ebook-page.rating-section': EbookPageRatingSection;
       'ebook-page.teaching-path-section': EbookPageTeachingPathSection;
+      'ebook-page.topic': EbookPageTopic;
       'ebook-page.will-learn-section': EbookPageWillLearnSection;
     }
   }

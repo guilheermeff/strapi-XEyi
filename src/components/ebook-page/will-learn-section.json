@@ -16,8 +16,9 @@
       ]
     },
     "topics": {
-      "type": "json",
-      "required": true
+      "type": "component",
+      "repeatable": true,
+      "component": "ebook-page.topic"
     }
   }
 }

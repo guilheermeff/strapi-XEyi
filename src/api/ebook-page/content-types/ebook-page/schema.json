@@ -1,0 +1,105 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ebook_pages",
+  "info": {
+    "singularName": "ebook-page",
+    "pluralName": "ebook-pages",
+    "displayName": "Ebook Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "pluginOptions": {},
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "pluginOptions": {}
+    },
+    "slug": {
+      "pluginOptions": {},
+      "type": "uid",
+      "targetField": "name"
+    },
+    "price": {
+      "pluginOptions": {},
+      "type": "decimal",
+      "required": true
+    },
+    "ebook": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ],
+      "pluginOptions": {}
+    },
+    "Heading": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {},
+      "component": "ebook-page.heading-section",
+      "required": true
+    },
+    "TeachingPath": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {},
+      "component": "ebook-page.teaching-path-section",
+      "required": true
+    },
+    "Rating": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {},
+      "component": "ebook-page.rating-section"
+    },
+    "WillLearn": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {},
+      "component": "ebook-page.will-learn-section"
+    },
+    "FAQ": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {},
+      "component": "ebook-page.faq-section",
+      "required": true
+    },
+    "CTA": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {},
+      "component": "ebook-page.cta-section",
+      "required": true
+    },
+    "colorPrimary": {
+      "type": "string",
+      "required": true
+    },
+    "colorSecondary": {
+      "type": "string",
+      "required": true
+    },
+    "Metadata": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ebook-page.metadata"
+    }
+  }
+}

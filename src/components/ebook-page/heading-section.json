@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_ebook_page_heading_sections",
+  "info": {
+    "displayName": "Heading Section",
+    "icon": "code"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "banner": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

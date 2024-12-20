@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_ebook_page_will_learn_sections",
+  "info": {
+    "displayName": "Will Learn Section",
+    "icon": "code",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "coverEbook": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "topics": {
+      "type": "json",
+      "required": true
+    }
+  }
+}

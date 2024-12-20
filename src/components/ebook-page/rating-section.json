@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_ebook_page_rating_sections",
+  "info": {
+    "displayName": "Rating Section",
+    "icon": "code"
+  },
+  "options": {},
+  "attributes": {
+    "nameClient": {
+      "type": "string",
+      "required": true
+    },
+    "rate": {
+      "type": "integer",
+      "default": 5,
+      "required": true,
+      "max": 5,
+      "min": 1
+    },
+    "feedbackDescription": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

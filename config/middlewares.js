@@ -14,7 +14,22 @@ module.exports = [
       },
     },
   },
-  'strapi::cors',
+  {
+    name: 'strapi::cors',
+    config: {
+      origin: [
+        'https://pet-academy-app.vercel.app',
+        'https://strapi-production-d553.up.railway.app',
+        "http://localhost:1337",
+        "http://localhost:3000"
+      ],
+      methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS"],
+      headers: ["Content-Type", "Authorization", "Origin", "Accept"],
+      keepHeaderOnError: true,
+      credentials: true,
+      maxAge: 1000 * 60 * 60 * 24 * 30
+    }
+  },
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',
